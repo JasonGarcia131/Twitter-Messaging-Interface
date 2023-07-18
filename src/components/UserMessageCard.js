@@ -1,11 +1,12 @@
 
 const styles = {
     profileThumbnailContainer: {
-        width: '100px',
-        height: '100px',
+        width: '90px',
+        height: '90px',
         border: '1px solid black',
         overflow: 'hidden',
-        borderRadius: '50%'
+        borderRadius: '50%',
+        marginRight: '15px'
     },
     profileThumbnail: {
         width: '100%',
@@ -33,26 +34,22 @@ const styles = {
 
 const signedInUserId = 0; 
 
-const UserMessageCard = ({username, tagName, date, profileThumbnail, content}) => {
+const UserMessageCard = ({username, tagName, date, profileThumbnail, content, userId}) => {
 
-    const contentThread = content.map((message)=>{
-        console.log(message)
-       return message.id === signedInUserId ? <p style={styles.content}>You: {message.message}</p> : <p style={styles.content} >{message.message}</p>
-    }) 
-
-    // console.log(contentThread)
+   console.log(profileThumbnail)
 
     return (
         <section style={styles.messageCard}>
-            <div style={styles.profileThumbnailContainer}></div>
-            {/* <img src= alt='profile thumbnail'/> */}
+            <div style={styles.profileThumbnailContainer}>
+                <img style={styles.profileThumbnail} src={profileThumbnail} alt="profile picture thumbnail"/>
+            </div>
             <div style={styles.contentInfoContainer}>
                 <div style={styles.contentInfo}>
                     <p>{username}</p>
                     <p>{tagName}</p>
                     <p>{date}</p>
                 </div>
-                {contentThread}
+                {userId === signedInUserId ? <p style={styles.content}>You: {content.message}</p> : <p style={styles.content} >{content.message}</p>}
             </div>
         </section>
     )

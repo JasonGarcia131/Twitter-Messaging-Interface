@@ -1,4 +1,4 @@
-// import {Fa42Group} from  'react-icons/fa6'
+import { BsGear } from 'react-icons/bs';
 
 const styles = {
     headerContainer: {
@@ -29,15 +29,13 @@ const Header = () => {
     return (
         <header style={styles.headerContainer}>
             <div style={styles.profileThumbnailContainer}>
-                <img style={styles.profileThumbnail} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9evJJ_TBlbANk9Oht-H_FwM6OKxA3i43kOpCl0x2nKA&usqp=CAU&ec=48665698" alt="profile thumbnail"/>
+                <img style={styles.profileThumbnail} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9evJJ_TBlbANk9Oht-H_FwM6OKxA3i43kOpCl0x2nKA&usqp=CAU&ec=48665698" alt="profile thumbnail" />
             </div>
             <p style={styles.screenTitle}>
                 Messages
             </p>
             <div>
-            {/* <FontAwesomeIcon icon="fa-regular fa-gear" />
-             */}
-             gear icon
+                <BsGear size='2em' />
             </div>
         </header>
     )

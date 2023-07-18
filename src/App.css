@@ -1,4 +1,25 @@
 .App{
   max-width: 1000px;
   margin: auto;
+  height: 100vh;
+  padding: 5px;
+}
+
+section{
+  width: 100%;
+}
+
+.messageBubble{
+  width: 25%;
+  margin-bottom: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .messageBubble{
+    width: 400px;
+    margin-left: 10%;
+  }
 }
