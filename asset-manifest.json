@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Twitter-Messaging-Interface/static/css/main.2980def3.css",
+    "main.js": "/Twitter-Messaging-Interface/static/js/main.6eb04d48.js",
+    "index.html": "/Twitter-Messaging-Interface/index.html",
+    "main.2980def3.css.map": "/Twitter-Messaging-Interface/static/css/main.2980def3.css.map",
+    "main.6eb04d48.js.map": "/Twitter-Messaging-Interface/static/js/main.6eb04d48.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2980def3.css",
+    "static/js/main.6eb04d48.js"
+  ]
+}
