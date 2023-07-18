@@ -1,6 +1,7 @@
 import { data } from "../data";
 import { BsArrowLeft } from "react-icons/bs";
-import { BsExclamationCircle } from "react-icons/bs"
+import { BsExclamationCircle } from "react-icons/bs";
+import "../App.css";
 
 const signedInUserId = 0;
 
@@ -16,24 +17,24 @@ const MessageThread = ({ handleMessageThread, viewThread }) => {
         const currentDate = new Date(message.date)
 
         return (
-            <div>
+            <div id="messageBubbleContainer" className={message.id === signedInUserId ? "sentBubbleContainer" : "receivedBubbleContainer"}>
                 {
                     previousDate < currentDate && <p style={styles.date}>{message.date}</p>
                 }
                 {
                     message.id === signedInUserId
                         ? (
-                            <div className="messageBubble" style={styles.sent.messageBubble}>
+                            <div className="messageBubble" id="sent" >
                                 <p>{message.message}</p>
                             </div>
                         ) : (
-                            <div className="messageBubble" style={styles.received }>
+                            <div className="messageBubble" id="received" >
                                 <p>{message.message}</p>
                             </div>
                         )
                 }
 
-                <p style={message.id === signedInUserId ? styles.sent.time : null}>{message.time}</p>
+                <p>{message.time}</p>
             </div>
 
         )
@@ -62,32 +63,15 @@ const MessageThread = ({ handleMessageThread, viewThread }) => {
 }
 
 const styles = {
-    sent: {
-        time: {
-            textAlign: 'right'
-        },
-        messageBubble: {
-            backgroundColor: '#1da1f2',
-            color: 'white',
-            marginLeft: '75%',
-            borderBottomLeftRadius: '20px',
-            borderBottomRightRadius: '5px',
-        }
-    },
-    received: {
-        backgroundColor: '#b2b2b230',
-        color: 'black',
-        borderBottomRightRadius: '20px',
-        borderBottomLeftRadius: '5px',
-    },
-    threadContainer: {
+     threadContainer: {
         width: '100%'
     },
     date: {
-        width: '20%',
+        width: '100%',
         margin: '0 auto',
         fontWeight: '600',
-        fontSize: '2rem'
+        fontSize: '2rem',
+        textAlign: "center"
     },
     profileThumbnailContainer: {
         width: '50px',

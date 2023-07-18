@@ -39,7 +39,7 @@ const UserMessageCard = ({username, tagName, date, profileThumbnail, content, us
     return (
         <section style={styles.messageCard}>
             <div style={styles.profileThumbnailContainer}>
-                <img style={styles.profileThumbnail} src={profileThumbnail} alt="profile picture thumbnail"/>
+                <img style={styles.profileThumbnail} src={profileThumbnail} alt="profile thumbnail"/>
             </div>
             <div style={styles.contentInfoContainer}>
                 <div style={styles.contentInfo}>
