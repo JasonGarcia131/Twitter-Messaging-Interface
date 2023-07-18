@@ -35,9 +35,7 @@ const styles = {
 const signedInUserId = 0; 
 
 const UserMessageCard = ({username, tagName, date, profileThumbnail, content, userId}) => {
-
-   console.log(profileThumbnail)
-
+    
     return (
         <section style={styles.messageCard}>
             <div style={styles.profileThumbnailContainer}>
