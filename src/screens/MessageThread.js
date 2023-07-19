@@ -15,9 +15,8 @@ const MessageThread = ({ handleMessageThread, viewThread }) => {
     const thread = mappedThreadMessages[0].content?.map((message, index) => {
         const previousDate = new Date(mappedThreadMessages[0].content[index - 1]?.date)
         const currentDate = new Date(message.date)
-
         return (
-            <div id="messageBubbleContainer" className={message.id === signedInUserId ? "sentBubbleContainer" : "receivedBubbleContainer"}>
+            <div key={index} className={message.id === signedInUserId ? "sentBubbleContainer" : "receivedBubbleContainer"}>
                 {
                     previousDate < currentDate && <p style={styles.date}>{message.date}</p>
                 }

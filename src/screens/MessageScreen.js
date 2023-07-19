@@ -103,7 +103,7 @@ const styles = {
         color: 'grey',
         fontSize: '20px',
         borderRadius: '25px',
-        width: '100%',
+        width: '98.9%',
         height: '40px',
         textAlign: 'center',
         marginBottom: '5px'
