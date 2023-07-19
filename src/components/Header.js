@@ -1,30 +1,5 @@
 import { BsGear } from 'react-icons/bs';
 
-const styles = {
-    headerContainer: {
-        display: 'flex',
-        justifyContent: 'space-between',
-        flexDirection: 'row',
-        alignItems: 'center',
-        margin: '5px'
-    },
-    profileThumbnailContainer: {
-        width: '60px',
-        height: '60px',
-        border: '1px solid black',
-        overflow: 'hidden',
-        borderRadius: '50%'
-    },
-    profileThumbnail: {
-        width: '100%',
-        height: '100%'
-    },
-    screenTitle: {
-        fontWeight: '600',
-        fontSize: '2rem'
-    }
-}
-
 const Header = () => {
     return (
         <header style={styles.headerContainer}>
@@ -35,10 +10,35 @@ const Header = () => {
                 Messages
             </p>
             <div>
-                <BsGear size='2em' />
+                <BsGear size='1.5em' />
             </div>
         </header>
     )
+}
+
+const styles = {
+    headerContainer: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        flexDirection: 'row',
+        alignItems: 'center',
+        margin: '5px'
+    },
+    profileThumbnailContainer: {
+        width: '40px',
+        height: '40px',
+        border: '1px solid black',
+        overflow: 'hidden',
+        borderRadius: '50%'
+    },
+    profileThumbnail: {
+        width: '100%',
+        height: '100%'
+    },
+    screenTitle: {
+        fontWeight: '600',
+        fontSize: '1.5rem'
+    }
 }
 
 export default Header;

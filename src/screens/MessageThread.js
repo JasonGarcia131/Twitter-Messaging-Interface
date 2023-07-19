@@ -33,7 +33,6 @@ const MessageThread = ({ handleMessageThread, viewThread }) => {
                             </div>
                         )
                 }
-
                 <p>{message.time}</p>
             </div>
 
@@ -46,15 +45,15 @@ const MessageThread = ({ handleMessageThread, viewThread }) => {
                 <BsArrowLeft size='2em' onClick={() => handleMessageThread()} />
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <div style={styles.profileThumbnailContainer}>
-                        <img style={styles.profileThumbnail} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9evJJ_TBlbANk9Oht-H_FwM6OKxA3i43kOpCl0x2nKA&usqp=CAU&ec=48665698" alt="profile thumbnail" />
+                        <img style={styles.profileThumbnail} src={mappedThreadMessages[0].profilePictureUrl} alt="profile thumbnail" />
                     </div>
-                    <p style={{ fontWeight: '600', fontSize: '2em', margin: '0' }}>{mappedThreadMessages[0].username}</p>
+                    <p style={{ fontWeight: '600', fontSize: '1.5em', margin: '0' }}>{mappedThreadMessages[0].username}</p>
                 </div>
-
                 <div>
-                    <BsExclamationCircle size='2em' />
+                    <BsExclamationCircle size='1.5em' />
                 </div>
             </header>
+            <br/>
             <div style={styles.threadContainer}>
                 {thread}
             </div>
@@ -74,8 +73,8 @@ const styles = {
         textAlign: "center"
     },
     profileThumbnailContainer: {
-        width: '50px',
-        height: '50px',
+        width: '40px',
+        height: '40px',
         border: '1px solid black',
         overflow: 'hidden',
         borderRadius: '50%'

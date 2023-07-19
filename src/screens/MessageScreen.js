@@ -115,10 +115,14 @@ const styles = {
         fontSize: '20px',
         borderRadius: '25px',
         width: '100%',
-        height: '40px',
+        height: '30px',
         paddingLeft: '10px',
         marginBottom: '5px'
     }
 }
+
+// search bar to 99%
+// profile picture downsize in mobile view
+// font size to 1.5 rem in mobile view
 
 export default MessageScreen

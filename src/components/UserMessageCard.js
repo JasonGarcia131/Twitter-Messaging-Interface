@@ -1,8 +1,8 @@
 
 const styles = {
     profileThumbnailContainer: {
-        width: '90px',
-        height: '90px',
+        width: '65px',
+        height: '65px',
         border: '1px solid black',
         overflow: 'hidden',
         borderRadius: '50%',
