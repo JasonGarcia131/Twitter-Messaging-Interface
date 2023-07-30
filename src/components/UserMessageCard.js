@@ -1,8 +1,8 @@
 
 const styles = {
     profileThumbnailContainer: {
-        width: '65px',
-        height: '65px',
+        width: '70px',
+        height: '70px',
         border: '1px solid black',
         overflow: 'hidden',
         borderRadius: '50%',
@@ -24,7 +24,7 @@ const styles = {
     messageCard: {
         display: 'flex',
         flexDirection: 'row',
-        justifyContent: 'space-between',
+        alignItems: 'center',
         margin: '20px 0'
     },
     content: {

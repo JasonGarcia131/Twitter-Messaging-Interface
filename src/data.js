@@ -88,25 +88,25 @@ export const data = {
         content: [
             {
                 id: 0,
-                message: "Yooo",
+                message: "hey",
                 date: "2022-01-21",
                 time: "8:30 AM"
             },
             {
                 id: 2,
-                message: "whats up",
+                message: "hey, hows it going?",
                 date: "2022-01-21",
                 time: "8:40 AM"
             },
             {
                 id: 0,
-                message: "Want to hang out?",
+                message: "im in town, want to meet up?",
                 date: "2023-02-20",
                 time: "10:37 AM"
             },
             {
                 id: 2,
-                message: "Sorry, cant.",
+                message: "yea sure, lets meet at the coffee shop",
                 date: "2023-02-20",
                 time: "12:01 PM"
             },
@@ -122,25 +122,25 @@ export const data = {
         content: [
             {
                 id: 0,
-                message: "Yooo",
+                message: "im hungry",
                 date: "2022-01-21",
                 time: "8:30 AM"
             },
             {
                 id: 3,
-                message: "whats up",
+                message: "what do you want to eat?",
                 date: "2022-01-21",
                 time: "8:40 AM"
             },
             {
                 id: 0,
-                message: "Want to hang out?",
+                message: "take out?",
                 date: "2023-02-20",
                 time: "10:37 AM"
             },
             {
                 id: 3,
-                message: "Sorry, cant.",
+                message: "ok.",
                 date: "2023-02-20",
                 time: "12:01 PM"
             },
@@ -156,25 +156,25 @@ export const data = {
         content: [
             {
                 id: 0,
-                message: "Yooo",
+                message: "have you watched the new teaser for deadpool?",
                 date: "2022-01-21",
                 time: "8:30 AM"
             },
             {
                 id: 4,
-                message: "whats up",
+                message: "yea im so stoked!",
                 date: "2022-01-21",
                 time: "8:40 AM"
             },
             {
                 id: 0,
-                message: "Want to hang out?",
+                message: "its going to be so good",
                 date: "2023-02-20",
                 time: "10:37 AM"
             },
             {
                 id: 4,
-                message: "Sorry, cant.",
+                message: "i cant wait.",
                 date: "2023-02-20",
                 time: "12:01 PM"
             },

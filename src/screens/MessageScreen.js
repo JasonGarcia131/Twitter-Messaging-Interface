@@ -104,7 +104,7 @@ const styles = {
         fontSize: '20px',
         borderRadius: '25px',
         width: '98.9%',
-        height: '40px',
+        height: '30px',
         textAlign: 'center',
         marginBottom: '5px'
     },

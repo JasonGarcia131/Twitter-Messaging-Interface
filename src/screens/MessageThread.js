@@ -66,7 +66,7 @@ const styles = {
     },
     date: {
         width: '100%',
-        margin: '0 auto',
+        margin: '10px auto',
         fontWeight: '600',
         fontSize: '2rem',
         textAlign: "center"
