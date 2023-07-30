@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Twitter-Messaging-Interface/static/css/main.1d4abdd0.css",
-    "main.js": "/Twitter-Messaging-Interface/static/js/main.5640325f.js",
+    "main.css": "/Twitter-Messaging-Interface/static/css/main.209d2d8c.css",
+    "main.js": "/Twitter-Messaging-Interface/static/js/main.2afd12e9.js",
     "index.html": "/Twitter-Messaging-Interface/index.html",
-    "main.1d4abdd0.css.map": "/Twitter-Messaging-Interface/static/css/main.1d4abdd0.css.map",
-    "main.5640325f.js.map": "/Twitter-Messaging-Interface/static/js/main.5640325f.js.map"
+    "main.209d2d8c.css.map": "/Twitter-Messaging-Interface/static/css/main.209d2d8c.css.map",
+    "main.2afd12e9.js.map": "/Twitter-Messaging-Interface/static/js/main.2afd12e9.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d4abdd0.css",
-    "static/js/main.5640325f.js"
+    "static/css/main.209d2d8c.css",
+    "static/js/main.2afd12e9.js"
   ]
 }

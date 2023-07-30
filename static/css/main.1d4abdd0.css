@@ -1,2 +1,0 @@
-.App{height:100vh;margin:auto;max-width:1000px;padding:5px}section{width:100%}.messageBubble{border-top-left-radius:20px;border-top-right-radius:20px;padding:10px;width:25%}.sentBubbleContainer{align-items:flex-end;display:flex;flex-direction:column}#sent{background-color:#1da1f2;border-bottom-left-radius:20px;border-bottom-right-radius:5px;color:#fff}#received{background-color:#b2b2b230;border-bottom-left-radius:5px;border-bottom-right-radius:20px;color:#000}@media screen and (max-width:600px){.messageBubble{width:50%}}
-/*# sourceMappingURL=main.1d4abdd0.css.map*/
