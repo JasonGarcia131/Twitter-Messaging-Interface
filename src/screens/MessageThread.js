@@ -12,6 +12,8 @@ const MessageThread = ({ handleMessageThread, viewThread }) => {
         message.threadId === viewThread.id
     ))
 
+    // Uses date to dynamically render messages grouped by its date thread.
+        // If the date is different, the date of the new thread will be rendered.
     const thread = mappedThreadMessages[0].content?.map((message, index) => {
         const previousDate = new Date(mappedThreadMessages[0].content[index - 1]?.date)
         const currentDate = new Date(message.date)
