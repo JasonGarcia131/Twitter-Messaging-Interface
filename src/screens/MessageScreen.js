@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import UserMessageCard from "../components/UserMessageCard";
-// import { data } from "../data";
+import { data } from "../data";
 import { useState, useEffect } from "react";
 import MessageThread from "./MessageThread";
 import { useGetMessagesQuery } from "../api/apiSlice";
@@ -14,12 +14,13 @@ const MessageScreen = () => {
     });
 
     // Built in hooks from rtk query
-    const {data=[], isLoading, error} = useGetMessagesQuery();
+    // const {data=[], isLoading, error} = useGetMessagesQuery();
 
     // State for the search function
     const [search, setSearch] = useState('');
 
     useEffect(() => {
+        //useGetMessageQuery();
     }, []);
 
     const handleMessageThread = (index) => {
@@ -29,7 +30,7 @@ const MessageScreen = () => {
         })
     }
 
-    const messageData = data.map((message, index) => {
+    const messageData = data.messages.map((message, index) => {
         return (
             <div key={index} onClick={() => handleMessageThread(message.threadId)}>
                 <UserMessageCard
@@ -44,7 +45,7 @@ const MessageScreen = () => {
         )
     })
 
-    const searchResults = data.filter((message, index) => {
+    const searchResults = data.messages.filter((message, index) => {
         return message.username.toLowerCase().includes(search.toLowerCase())
     })
 
